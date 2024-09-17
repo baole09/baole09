@@ -4,7 +4,7 @@ using namespace std;
 /* Giai pt bac 2:
 int main(){
 
-    int a,b,c;
+    float a,b,c;
     cout<<"Nhap a= ";cin>>a;
     cout<<"Nhap b= ";cin>>b;
     cout<<"Nhap c= ";cin>>c;
@@ -21,7 +21,7 @@ int main(){
 
     }
     else{
-        int delta=b*b - 4*a*c;
+        double delta=b*b - 4*a*c;
         if(delta>0)
         {
             cout<<"PT co 2 No phan biet:"<<endl;
@@ -73,6 +73,7 @@ int main()
 }
 */
 
+/* Thu tu tang dan:
 int main(){
     int a, b, c,tmp=0;
     cout<<"Nhap (a,b,c): ";cin>>a>>b>>c;
@@ -91,6 +92,73 @@ int main(){
         b=c;
         c=tmp;
     }
-    cout<<"Thu tu tang dan: "<<a<<" "<<b<<" "<<c<<endl;
+    
+	//if(a>b) swap(a,b);
+    //if(a>c) swap(a,c);
+    //if(b>c) swap(b,c);
+    
+	cout<<"Thu tu tang dan: "<<a<<" "<<b<<" "<<c<<endl;
     return 0;
+}
+
+*/
+
+/* Dem negativeCount,zeroCount,positiveCount:
+int main(){
+	int a[6],i;
+	int negativeCount=0, positiveCount=0, zeroCount=0;
+	cout<<"Enter a[]= "<<endl;
+	for(int i=0; i<6; i++){
+		cin>>a[i];
+	
+		if(a[i]<0){
+			negativeCount++;
+		}
+		else if(a[i]==0){
+			zeroCount++;
+		}
+		else{
+			positiveCount++;
+		}
+		
+	}
+	cout<<"NegativeCount="<<negativeCount<<endl;
+	cout<<"ZeroCount="<<zeroCount<<endl;
+	cout<<"PositiveCount="<<positiveCount<<endl;
+	return 0;
+}
+*/
+
+int main(){
+	int a,b,c,d,max,min;
+	cout<<"Nhap a,b,c,d:";
+	cin>>a>>b>>c>>d;
+	/*max=a;
+	if(max<=b){
+		max=b;
+		if(max<=c){
+			max=c;
+			if(max<=d){
+				max=d;
+			}
+		}
+	}
+	cout<<"Max:"<<max<<endl;
+	
+	min=a;
+	if(min>=b){
+		min=b;
+		if(min>=c){
+			min=c;
+			if(min>=d){
+				min=d;
+			}
+		}
+	}
+	cout<<"Min:"<<min<<endl;
+	*/
+	max= (a>b) ? ((a>c) ? a : c) : ((b>c) ? b : c) : ((a>d) ? a : d) :;
+	cout<<max;
+	min= (a)
+	return 0;
 }
